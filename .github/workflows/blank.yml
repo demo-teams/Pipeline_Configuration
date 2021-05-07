@@ -1,0 +1,15 @@
+name: Variable
+
+on: push
+  
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+   
+
+    steps:
+     
+      - name: Show the secret
+        run: echo "My secret is" ${{secrets.MSG_VAR}} 
